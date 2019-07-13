@@ -5,9 +5,11 @@ pipeline {
       
    stages {
     stage('Preparation') {
+       steps {
         script {
             echo "prepare for build"
         }
+      }
     }
     stage('Docker build') {
         steps {
