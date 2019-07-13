@@ -1,6 +1,7 @@
 def registry='csudharsan/my-nginx-app'
 pipeline {
 
+   stages {
     stage('Docker build') {
         steps {
             script {
@@ -9,6 +10,6 @@ pipeline {
             }
 
         }
-
     }
+  }
 }
