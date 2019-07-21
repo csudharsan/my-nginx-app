@@ -2,7 +2,6 @@ pipeline {
     agent {
         dockerfile {
             // image 'dockerhub.xxxx.com/xxxx-dev-docker/centos:7.6.1810'
-            label ‘xxxx.xxxx.com'
             filename 'Dockerfile.infra'
             dir 'build-infra'
             args "--privileged -u root -v /var/run/docker.sock:/var/run/docker.sock"
